@@ -2,7 +2,7 @@
 import { useListStore } from "../store/data";
 
 
-export default function page() {
+export default function Page() {
 
     const list = useListStore(state => state.list.filter((ele) => ele.done));
     const deletePermanently = useListStore(state => state.deletePermanently);
@@ -10,7 +10,7 @@ export default function page() {
 
   return (
     <div className="my-6 p-10">
-      {list.map((item, index) => {
+      {list.map((item) => {
         return (
             <div key={item.id} className="flex p-3 rounded-md bg-black text-white font-bold gap-4 flex-wrap justify-between mb-4 cursor-pointer hover:rounded-none transition-all">
                 <p className="min-w-">{item.name}</p>
