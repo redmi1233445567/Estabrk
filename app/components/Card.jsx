@@ -20,7 +20,7 @@ export default function Card() {
     <div className="my-6">
       {list.map((item, index) => {
         return (
-            <div key={item.id} className="flex p-3 rounded-md bg-black text-white font-bold gap-4 flex-wrap justify-between mb-4 cursor-pointer hover:rounded-none transition-all">
+            <div key={item.id} className="flex p-3 rounded-md bg-black text-white items-center font-bold gap-4 flex-wrap justify-between mb-4 cursor-pointer hover:rounded-none transition-all">
                 <p className="w-32">{item.name}</p>
                 <p className="w-32">{item.type}</p>
                 <p className="w-32">{item.number}</p>
